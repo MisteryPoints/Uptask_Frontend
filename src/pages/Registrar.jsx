@@ -61,7 +61,7 @@ const Registrar = () => {
 
   return (
     <>
-      <h1 className="text-sky-600 font-black text-6xl capitalize select-none">Crea tu cuenta y Administra tus <span className="text-slate-700">Proyectos</span></h1>
+      <h1 className="text-red-600 font-black text-6xl capitalize select-none">Crea tu cuenta y Administra tus <span className="text-slate-700">Proyectos</span></h1>
       { msg && <Alert alert={alert}/> }
       <form onSubmit={handleSubmit} className="my-5 p-10 bg-white shadow rounded-lg">
         <div className="my-5">
@@ -80,7 +80,7 @@ const Registrar = () => {
           <label htmlFor="password2" className="uppercase text-gray-600 block text-xl font-bold select-none">Repetir Password</label>
           <input type="password" id="password2" placeholder="Password de Registro" className="w-full mt-3 p-3 border rounded-xl bg-gray-50" value={password2} onChange={e => setPassword2(e.target.value)}/>
         </div>
-        <input type="submit" value="Crear Cuenta" className="bg-sky-700 w-full mb-5 py-3 font-bold text-white uppercase rounded-lg border cursor-pointer hover:bg-sky-800 transition-all duration-300" />
+        <input type="submit" value="Crear Cuenta" className="bg-red-700 w-full mb-5 py-3 font-bold text-white uppercase rounded-lg border cursor-pointer hover:bg-red-800 transition-all duration-300" />
       </form>
       <nav className="lg:flex lg:justify-between">
         <Link to="/" className="block text-center my-5 text-slate-500 uppercase text-sm">¿Ya tienes una cuenta? Inicia Sesión</Link>

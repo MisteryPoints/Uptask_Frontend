@@ -32,10 +32,10 @@ const ColaboradorForm = () => {
                 <label htmlFor="email" className='text-gray-700 uppercase font-bold text-sm'>
                     Email del Colaborador
                 </label>
-                <input type="email" id='email' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-sky-500 focus:outline-none' placeholder="Email del Usuario" value={email}
+                <input type="email" id='email' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-red-500 focus:outline-none' placeholder="Email del Usuario" value={email}
                 onChange={e => setEmail(e.target.value)}/>
             </div>
-            <input type="submit" className='bg-sky-600 hover:bg-sky-700 p-3 w-full text-white uppercase font-bold cursor-pointer transition-colors rounded-lg text-xs lg:text-sm' value='Buscar Colaborador'/>
+            <input type="submit" className='bg-red-600 hover:bg-red-700 p-3 w-full text-white uppercase font-bold cursor-pointer transition-colors rounded-lg text-xs lg:text-sm' value='Buscar Colaborador'/>
         </form>
     )
 }

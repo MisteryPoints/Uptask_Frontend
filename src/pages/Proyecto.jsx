@@ -59,7 +59,7 @@ const Proyecto = () => {
  
     return (
         loading ? (
-            <button type="button" className="bg-sky-600 inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white   hover:bg-sky-400 transition ease-in-out duration-150 cursor-not-allowed" disabled>
+            <button type="button" className="bg-red-600 inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white   hover:bg-red-400 transition ease-in-out duration-150 cursor-not-allowed" disabled>
                 <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> 
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -82,7 +82,7 @@ const Proyecto = () => {
                 )}
                 </div>
             {admin && (
-                <button type='button' className='text-sm px-5 py-3 w-full md:w-auto rounded-lg uppercase font-bold bg-sky-400 text-center text-white mt-5 hover:bg-sky-500 flex sm:justify-between gap-2'
+                <button type='button' className='text-sm px-5 py-3 w-full md:w-auto rounded-lg uppercase font-bold bg-red-400 text-center text-white mt-5 hover:bg-red-500 flex sm:justify-between gap-2'
                 onClick={handleModalTarea}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                     <path fillRule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zM12.75 12a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V18a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V12z" clipRule="evenodd" />

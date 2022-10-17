@@ -52,7 +52,7 @@ const Busqueda = () => {
                     {proyectosFiltrados.length > 0 && (
                         <Combobox.Options static className="max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800">
                             {proyectosFiltrados.map( proyecto => (
-                                <Combobox.Option key={ proyecto._id } value={ proyecto } className={ ({ active }) => classNames('cursor-default select-none px-4 py-2', active && 'bg-sky-600 text-white') }>
+                                <Combobox.Option key={ proyecto._id } value={ proyecto } className={ ({ active }) => classNames('cursor-default select-none px-4 py-2', active && 'bg-red-600 text-white') }>
                                     {proyecto.nombre}
                                 </Combobox.Option>
                             ))}

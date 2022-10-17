@@ -122,14 +122,14 @@ const ModalFormularioTarea = () => {
                                         <label htmlFor="nombre" className='text-gray-700 uppercase font-bold text-sm'>
                                             Nombre Tarea
                                         </label>
-                                        <input type="text" id='nombre' placeholder='Nombre de la Tarea' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-sky-500 focus:outline-none' value={nombre}
+                                        <input type="text" id='nombre' placeholder='Nombre de la Tarea' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-red-500 focus:outline-none' value={nombre}
                                         onChange={e => setNombre(e.target.value)}/>
                                     </div>
                                     <div className='mb-5'>
                                         <label htmlFor="descripcion" className='text-gray-700 uppercase font-bold text-sm'>
                                             Descripción Tarea
                                         </label>
-                                        <textarea id='descripcion' placeholder='Descripción de la Tarea' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-sky-500 focus:outline-none'
+                                        <textarea id='descripcion' placeholder='Descripción de la Tarea' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-red-500 focus:outline-none'
                                         value={descripcion}
                                         onChange={e => setDescripcion(e.target.value)}/>
                                     </div>
@@ -137,14 +137,14 @@ const ModalFormularioTarea = () => {
                                         <label htmlFor="fecha-entrega" className='text-gray-700 uppercase font-bold text-sm'>
                                             Fecha de Entrega
                                         </label>
-                                        <input type="date" id='fecha-entrega' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-sky-500 focus:outline-none' value={fechaEntrega}
+                                        <input type="date" id='fecha-entrega' className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-red-500 focus:outline-none' value={fechaEntrega}
                                         onChange={e => setFechaEntrega(e.target.value)}/>
                                     </div>
                                     <div className='mb-5'>
                                         <label htmlFor="prioridad" className='text-gray-700 uppercase font-bold text-sm'>
                                             Prioridad
                                         </label>
-                                        <select id='prioridad'   className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-sky-500 focus:outline-none'
+                                        <select id='prioridad'   className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md focus:border-red-500 focus:outline-none'
                                         value={prioridad}
                                         onChange={e => setPrioridad(e.target.value)}>
                                             <option value="">-- Seleccionar --</option>
@@ -154,7 +154,7 @@ const ModalFormularioTarea = () => {
                                         </select>
                                     </div>
 
-                                    <input type="submit" className='bg-sky-600 hover:bg-sky-700 p-3 w-full text-white uppercase font-bold cursor-pointer transition-colors rounded-lg' value={id ? 'Guardar Cambios' : 'Crear Tarea'}/>
+                                    <input type="submit" className='bg-red-600 hover:bg-red-700 p-3 w-full text-white uppercase font-bold cursor-pointer transition-colors rounded-lg' value={id ? 'Guardar Cambios' : 'Crear Tarea'}/>
                                   </form>
                                 </div>
                             </div>

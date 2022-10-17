@@ -15,15 +15,15 @@ const Header = () => {
   }
 
   return (
-    <header className="px-4 py-5 bg-white border-b">
+    <header className="px-4 py-5 bg-black border-b">
         <div className="md:flex md:justify-between">
-            <h2 className="text-4xl text-sky-600 font-black text-center select-none mb-5 md:mb-0"> Uptask </h2>
+            <h2 className="text-4xl text-red-600 font-black text-center select-none mb-5 md:mb-0"> Uptask </h2>
             <div className='flex flex-col md:flex-row items-center gap-4'>
-              <button type="button" className="rounded-lg block font-bold uppercase underline decoration-transparent decoration-solid hover:decoration-black decoration-2 right" onClick={handleBuscador}>
+              <button type="button" className="rounded-lg block font-bold uppercase underline decoration-transparent decoration-solid text-white hover:decoration-white decoration-2 right" onClick={handleBuscador}>
                 Buscar Proyecto
               </button>
-              <Link to='/proyectos' className='font-bold uppercase underline decoration-transparent decoration-solid hover:decoration-black decoration-2'>Proyectos</Link>
-              <button type='button' className='text-white text-sm bg-sky-600 p-3 rounded-md uppercase font-bold hover:bg-sky-700' onClick={handleCerrarSesion}>Cerrar Sesión</button>
+              <Link to='/proyectos' className='font-bold uppercase underline decoration-transparent decoration-solid text-white hover:decoration-white decoration-2'>Proyectos</Link>
+              <button type='button' className='text-white text-sm bg-red-600 p-3 rounded-md uppercase font-bold hover:bg-red-700' onClick={handleCerrarSesion}>Cerrar Sesión</button>
               <Busqueda/>
             </div>
         </div>

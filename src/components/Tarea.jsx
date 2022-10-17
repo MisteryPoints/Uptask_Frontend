@@ -23,7 +23,7 @@ const Tarea = ({tarea}) => {
                 {admin && (
                     <button className="bg-indigo-600 px-4 py-3 text-white uppercase font-bold text-sm rounded-lg hover:bg-indigo-700" onClick={() => handleModalEditarTarea(tarea)}>Editar</button>
                 )} 
-                <button className={`${estado ? 'bg-sky-600 hover:bg-sky-700' : 'bg-gray-600 hover:bg-gray-700'} px-4 py-3 text-white uppercase font-bold text-sm rounded-lg `} onClick={() => statusTarea(_id)}>{estado ? 'Completa' : 'Incompleta'}</button>
+                <button className={`${estado ? 'bg-red-600 hover:bg-red-700' : 'bg-gray-600 hover:bg-gray-700'} px-4 py-3 text-white uppercase font-bold text-sm rounded-lg `} onClick={() => statusTarea(_id)}>{estado ? 'Completa' : 'Incompleta'}</button>
                 {admin && (
                     <button className="bg-red-600 px-4 py-3 text-white uppercase font-bold text-sm rounded-lg hover:bg-red-700" onClick={() => handleModalEliminarTarea(tarea)}>Eliminar</button>
                 )}
