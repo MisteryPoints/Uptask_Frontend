@@ -17,7 +17,7 @@ const SecureRoute = () => {
     return (
         <>
             {auth._id ? (
-                <div className='bg-sky-100'>
+                <div className='bg-sky-100  mb-[0.5rem]'>
                     <Header/>
                     <div className='md:flex md:min-h-screen'>
                         <Sidebar/>
